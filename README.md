@@ -1,6 +1,3 @@
-Here's a description you can use in the README file for your games landing page repository:
-
----
 
 ## Games Landing Page
 
