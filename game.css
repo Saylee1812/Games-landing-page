@@ -1,93 +1,92 @@
-*{
-    margin:0;
-    padding:0;
-    font-family:Arial, Helvetica, sans-serif;
-
-}
-body{
-    margin-left: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: url("cycling_1.jpg") no-repeat center;
-    background-size: cover;
-  
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-
-/* Header Text Styles */
-.header-text {
-    max-width: 600px; /* Adjust width as needed */
-    margin-right: 5px;/*Space between text and slider */
-    color: white;
-    margin-left: 30px;
-    align-items: left;
-    max-height: 500px;
-    justify-content: space-between;
-   
-}
-
-.header-text h2 {
-    font-size: 3rem; /* Adjust font size */
-    font-weight: bold;
-    margin-bottom: 40px;
-}
-
-.header-text p {
-    margin-top: 20px;
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-.card-slider{
-    overflow:hidden;
-    max-width: 1200px;
-    margin: 20px 55px 0px 50px;
-    max-height: 700px;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.card-list .card-item{
-    color: white;
-    user-select: none;
-    padding:20px ;
-    border-radius: 8px;
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    backdrop-filter: blur(20px);
-    background: rgba(255,255,255,0.2);
-    border: 1px solid rgba(255,255,255,1);
-    max-height: 500px;
-
+    min-height: 100vh;
+    background: url("cycling_1.jpg") no-repeat center center;
+    background-size: cover;
 }
 
-.card-list .card-item .game-img{
-    width:300px;
-    height: 200px;
+.header-text {
+    max-width: 90%;
+    color: white;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.header-text h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.header-text p {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    padding: 0 20px;
+    
+}
+/* 
+.card-slider {
+    overflow: hidden;
+} */
+
+.card-slider{
+    overflow:hidden;
+    max-width: 1200px;
+    margin: 20px 55px 0px 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card-list .card-item {
+    color: white;
+    user-select: none;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 600px;
+    justify-content: center;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.card-list .card-item .game-img {
+    width: 80%;
+    height: auto;
     border-radius: 10px;
     margin-bottom: 20px;
     border: 3px solid white;
-    padding: 3px;
-
 }
 
-.card-list .card-item .info{
-    font-size: 1.5rem;
+.card-list .card-item .info {
+    font-size: 1rem;
     color: rgb(24, 24, 8);
-    font-weight: 500;
-    margin:10px 10px 20px 10px;
+    font-weight: 200;
+    margin-bottom: 10px;
     text-align: center;
-   
 }
 
-.card-list .card-item .play{
-    font-size: 1.5rem;
-    padding: 8px 25px;
+.card-list .card-item .play {
+    font-size: 1.2rem;
+    padding: 8px 20px;
     color: navy;
     border-radius: 6px;
     font-weight: 500;
@@ -95,52 +94,44 @@ body{
     background: white;
     border: 1px solid transparent;
     transition: 0.2s ease;
-    margin-top: 10px;
 }
 
-.card-list .card-item .play:hover{
-    background:rgba(255,255,255,0.1) ;
-    border: 1px solid #ffff;
-    color: #ffff;
+.card-list .card-item .play:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #fff;
+    color: #fff;
 }
 
-.card-slider .swiper-pagination-bullet{
-    background:#ffff;
+.card-slider .swiper-pagination-bullet {
+    background: #fff;
     height: 15px;
-    width:15px;
+    width: 15px;
 }
-
-@media (max-width:768px){
-    .card-slider{
-        margin:0 10px 40px;
-    }
-}
-
-
-.card-slider .swiper-slide-button{
-    display: none;
-}
-
 
 .card-slider .swiper-button-prev,
 .card-slider .swiper-button-next {
-    color: #ffff;
-    margin-top: -50px;
-    transition: 0.2s ease;
+    color: #fff;
 }
 
-.card-slider .swiper-button-prev:hover,
-.card-slider .swiper-button-next:hover {
-    color: navy;
+@media (max-width: 768px) {
+    .header-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .header-text p {
+        font-size: 0.9rem;
+    }
+
+    .card-list .card-item .game-img {
+        width: 90%;
+    }
+
+    .card-list .card-item .info {
+        font-size: 0.9rem;
+    }
+
+    .card-list .card-item .play {
+        font-size: 1rem;
+        padding: 6px 16px;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
