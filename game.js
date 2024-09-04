@@ -1,16 +1,14 @@
 const swiper = new Swiper('.card-slider', {
     loop: true,
     grabCursor: true,
-    spaceBetween: 30,
+    spaceBetween: 20,
 
-    // If we need pagination
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
         dynamicBullets: true,
     },
 
-    // Navigation arrows
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -19,6 +17,9 @@ const swiper = new Swiper('.card-slider', {
     breakpoints: {
         0: {
             slidesPerView: 1,
+        },
+        480: {
+            slidesPerView: 1.5,
         },
         768: {
             slidesPerView: 2,
