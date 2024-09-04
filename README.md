@@ -20,6 +20,4 @@ This landing page is ideal for creating an engaging gateway to your games, makin
 2. Open the `index.html` file in a web browser to view the landing page.
 3. Customize the games and links as needed to match your content.
 
---- 
 
-Feel free to adjust this description based on any additional features or specific details you want to highlight!
