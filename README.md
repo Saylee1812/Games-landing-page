@@ -17,7 +17,7 @@ This landing page is ideal for creating an engaging gateway to your games, makin
 
 ### How to Use:
 1. Clone or download the repository.
-2. Open the `index.html` file in a web browser to view the landing page.
+2. Open the `game.html` file in a web browser to view the landing page.
 3. Customize the games and links as needed to match your content.
 
 
